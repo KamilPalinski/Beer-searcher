@@ -1,4 +1,4 @@
-import { Styles } from 'styles';
+import { Styles, theme } from 'styles';
 
 export const Backdrop: Styles = {
   position: 'fixed',
@@ -13,6 +13,16 @@ export const Backdrop: Styles = {
 export const Modal: Styles = {
   position: 'fixed',
   width: '900px',
+  [theme.breakpoints.down('sm')]: {
+    width: '300px',
+    marginLeft: '-150px',
+  },
+
+  [theme.breakpoints.between('sm', 'md')]: {
+    width: '600px',
+    marginLeft: '-300px',
+  },
+
   height: '90vh',
   top: '50%',
   left: '50%',
