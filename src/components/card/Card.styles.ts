@@ -1,19 +1,16 @@
-import { theme } from 'styles';
-
 export const Container = {
-  display: 'flex',
-  flexDirection: 'column',
-  width: '200px',
-  height: '300px',
-  backgroundColor: 'cream',
-  border: '1px solid black',
-  marigin: '20px',
-  alignItems: 'center',
+  width: '270px',
+  height: '350px',
+  backgroundColor: 'white',
+  border: '1px solid gray',
+  padding: '15px',
 };
 
 export const Image = {
   width: '100%',
-  height: '120px',
+  height: '150px',
+  objectFit: 'contain',
+  marginTop: '15px',
 };
 
 export const Decorative = {
@@ -22,10 +19,15 @@ export const Decorative = {
 };
 
 export const Name = {
-  padding: '5px',
-  fontSize: '24px',
+  height: '60px',
+  padding: '15px',
+  fontSize: '16px',
+  textAlign: 'center',
+  fontWeight: 'bold',
 };
 
 export const Tagline = {
   fontSize: '12px',
+  fontStyle: 'italic',
+  textAlign: 'center',
 };
