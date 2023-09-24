@@ -10,10 +10,10 @@ export const useApi = () => {
       try {
         setIsLoading(true);
         if (method === 'GET') {
-          response = await fetch(`https://api.punkapi.com/v2/beers/${queryParams}`);
+          response = await fetch(`https://api.punkapi.com/v2/beers`);
         }
         if (method === 'getDetail') {
-          response = await fetch(`https://api.punkapi.com/v2/beers?${queryParams}`);
+          response = await fetch(`https://api.punkapi.com/v2/beers/${queryParams}`);
         }
         const responseData = await response?.json();
         const sentData = catchData?.(responseData);

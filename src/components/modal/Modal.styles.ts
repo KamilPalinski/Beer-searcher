@@ -1,6 +1,6 @@
-import { Styles, theme } from 'styles';
+import { theme } from 'styles';
 
-export const Backdrop: Styles = {
+export const Backdrop = {
   position: 'fixed',
   top: '0',
   left: '0',
@@ -10,7 +10,7 @@ export const Backdrop: Styles = {
   backgroundColor: 'rgba(0, 0, 0, 0.75)',
 };
 
-export const Modal: Styles = {
+export const Modal = {
   position: 'fixed',
   width: '900px',
   [theme.breakpoints.down('sm')]: {
@@ -34,7 +34,7 @@ export const Modal: Styles = {
   zIndex: '30',
 };
 
-export const Button: Styles = {
+export const Button = {
   fontSize: '24px',
   float: 'right',
 };
