@@ -34,7 +34,7 @@ export const DetailView = () => {
   const { fetchData, isLoading } = useApi();
 
   useEffect(() => {
-    query.beerid && fetchData('GET', dataHandler, query.beerid?.toString());
+    query.beerid && fetchData('getDetail', dataHandler, query.beerid?.toString());
   }, [query]);
 
   const dataHandler = (data: ProductTypes[]) => {

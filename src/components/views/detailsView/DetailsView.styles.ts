@@ -5,7 +5,6 @@ export const ContainerWrap = {
   width: '100%',
   display: 'flex',
   flexDirection: 'row',
-  borderTop: 'solid 5px black',
   overflowY: 'auto',
   [theme.breakpoints.down('sm')]: {
     flexDirection: 'column',
@@ -13,6 +12,9 @@ export const ContainerWrap = {
 };
 
 export const Image = {
+  [theme.breakpoints.down('sm')]: {
+    marginTop: '10px',
+  },
   height: '300px',
   width: '200px',
   objectFit: 'contain',
