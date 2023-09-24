@@ -8,7 +8,7 @@ import { LayoutProps } from './Layout.types';
 export const Layout = ({ children }: LayoutProps) => (
   <>
     <Header />
-    <Container disableGutters component="main" maxWidth="xl" sx={Styles.Container}>
+    <Container disableGutters component="main" sx={Styles.Container}>
       {children}
     </Container>
   </>

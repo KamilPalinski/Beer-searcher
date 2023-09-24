@@ -7,9 +7,9 @@ export const GridContainer = {
   gridTemplateColumns: 'repeat(auto-fill,minmax(300px,1fr) )',
   rowGap: '15px',
   width: '100%',
-  maxWidth: '1430px',
+  maxWidth: '1440px',
   margin: 'auto',
-  padding: '10px',
+  paddingTop: '10px',
 };
 
 export const GridElement = {

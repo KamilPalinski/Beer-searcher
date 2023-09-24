@@ -31,7 +31,7 @@ export const DetailView = () => {
   const [data, setData] = useState<ProductTypes>();
   const [value, setValue] = useState('Malt');
   const { query } = useRouter();
-  const { fetchData, isLoading } = useApi();
+  const { fetchData } = useApi();
 
   useEffect(() => {
     query.beerid && fetchData('getDetail', dataHandler, query.beerid?.toString());
@@ -44,7 +44,7 @@ export const DetailView = () => {
   const changeHandler = (event: SyntheticEvent, newValue: string) => {
     setValue(newValue);
   };
-  console.log(value);
+
   return (
     <ModalComponent>
       <Box sx={ContainerWrap}>
