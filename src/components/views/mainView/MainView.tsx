@@ -6,7 +6,7 @@ import { Container } from './MainView.styles';
 
 export const MainView = () => {
   return (
-    <Box>
+    <Box sx={Container}>
       <CardList />
     </Box>
   );

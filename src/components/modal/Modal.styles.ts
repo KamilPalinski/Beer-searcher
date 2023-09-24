@@ -12,7 +12,7 @@ export const Backdrop = {
 
 export const Modal = {
   position: 'fixed',
-  width: '900px',
+  width: '1000px',
   [theme.breakpoints.down('sm')]: {
     width: '300px',
     marginLeft: '-150px',
@@ -27,7 +27,7 @@ export const Modal = {
   top: '50%',
   left: '50%',
   marginTop: '-45vh',
-  marginLeft: '-450px',
+  marginLeft: '-500px',
   background: 'white',
   padding: '5px',
   boxShadow: '0 2px 8px rgba(0, 0, 0, 0.25)',
