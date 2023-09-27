@@ -4,6 +4,7 @@ import { AppProps } from 'next/app';
 
 import { Layout } from 'components';
 import { AppProviders } from '../providers/AppProviders';
+import { PagesContextProvider } from 'context';
 import { createEmotionCache } from 'utils';
 interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
@@ -20,13 +21,15 @@ export default function App(props: MyAppProps) {
 
   return (
     <AppProviders emotionCache={emotionCache}>
-      <Head>
-        <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <title>Wyszukiwarka piw</title>
-      </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <PagesContextProvider>
+        <Head>
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
+          <title>Wyszukiwarka piw</title>
+        </Head>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </PagesContextProvider>
     </AppProviders>
   );
 }

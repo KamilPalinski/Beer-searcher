@@ -1,4 +1,4 @@
-export interface ProductTypes {
+export type ProductTypes = {
   id: number;
   name: string;
   tagline: string;
@@ -22,4 +22,4 @@ export interface ProductTypes {
     }[];
     yeast: string;
   };
-}
+};
